@@ -23,7 +23,9 @@ def proper_triangle
  end
  
  def greater_than_zero
-   @first_length > 0 && @second_length > 0 && @third_length > 0 
+  if @first_length > 0 && @second_length > 0 && @third_length > 0 
+    return true 
+  end
  end
 
 class TriangleError < StandardError
