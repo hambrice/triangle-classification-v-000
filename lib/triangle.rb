@@ -25,3 +25,4 @@ def proper_triangle
 class TriangleError < StandardError
   
 end
+end
