@@ -10,6 +10,10 @@ attr_accessor :first_length, :second_length, :third_length
     if proper_triangle && greater_than_zero
       if @first_length == @second_length && @second_length == @third_length
         :equilateral
+        elsif @first_length == @second_length || @first_length == @third_length || @second_length == @third_length
+        :isosceles
+      else
+        :scalene
       end
     else
       raise TriangleError
