@@ -10,7 +10,7 @@ attr_accessor :first_length, :second_length, :third_length
     if proper_triangle && greater_than_zero
       if @first_length == @second_length == @third_length
         :equilateral
-      
+      end
     else
       raise TriangleError
     end
