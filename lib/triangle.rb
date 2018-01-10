@@ -17,7 +17,9 @@ attr_accessor :first_length, :second_length, :third_length
 end
 
 def proper_triangle
- @first_length + @second_length < @third_length && @first_length + @third_length < @second_length && @second_length + @third_length < @first_length
+ if @first_length + @second_length < @third_length && @first_length + @third_length < @second_length && @second_length + @third_length < @first_length
+   return true 
+ end
  end
  
  def greater_than_zero
