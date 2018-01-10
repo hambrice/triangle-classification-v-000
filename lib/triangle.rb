@@ -27,8 +27,7 @@ def proper_triangle
     return true 
   end
  end
-
+end
 class TriangleError < StandardError
   
-end
 end
