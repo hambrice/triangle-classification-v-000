@@ -7,7 +7,7 @@ attr_accessor :first_length, :second_length, :third_length
   end
   
   def kind
-    if proper_triangle && greater_thanzero
+    if proper_triangle && greater_than_zero
       
     else
       raise TriangleError
